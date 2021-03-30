@@ -50,6 +50,7 @@ These tools require rather specific installation processes, and if not already i
 #### BTC-Test
 
 1) First step is to execute the functions with the necessary arguments in order showed in the blow example. Functions for a valid BTC-Test network transaction:
+<br>
 ![BTC Commands](./Images/BTC_commands.png)
 NOTE: Passing the create_tx() is not required.
 
