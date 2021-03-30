@@ -3,6 +3,7 @@
 ### Manage and Move Your Cryptocurrencies, Programatically
 
 Introduction
+<br>
 This project was conceived to provide a functional cryptocurrency wallet built from scratch. The wallet was first built specifically for Bitcoin and Ethereum, but still retains expansion functionality and later versions could include many more alt-coins. The application has been tested on a public BTC and private Ethereum testnets. We used the HD-Wallet-Derive termial tool, Web3, and bit as the primary libraries for key control and transaction execution. 
 
 These tools require rather specific installation processes, and if not already install on your machine/enviroment, you will find a hd-wallet-derive guide [here](Install_readmes/HD_Wallet_Derive_Install_Guide.md) and a guide for both web3 and bit [here](Install_readmes/Blockchain_TX_Install_Guide.md).
