@@ -20,7 +20,7 @@ w3.eth.setGasPriceStrategy(medium_gas_price_strategy)
 
 mnemonic = os.getenv('MNEMONIC')
 
-# Function to create and store keys/addresses
+# Function to create and store keys/addresses.
 def derive_wallets(coin):
     command = f'php hd-wallet-derive/hd-wallet-derive.php -g --mnemonic="{mnemonic}" --cols=path,address,privkey,pubkey --format=json --coin="{coin}" --numderive=2'
     p = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
@@ -78,7 +78,7 @@ def send_tx(coin, account, to, amount):
 
 
 
-# Initialize Ethereum Account object and transactions
+# Initialize Ethereum Account object and transactions.
 eth_account = priv_key_to_account(ETH, coins[ETH][0]['privkey'])
 
 # The amounts appear to be extremely large because they are denominated in gwei, the small division unit of Ethereum
@@ -88,7 +88,7 @@ send_tx(ETH, eth_account, "0x7d408D1c14BAf2894aF7119A20f6F9014543F992", 50000000
 
 
 
-# Initialize BTC Account object and transactions
+# Initialize BTC Account object and transactions.
 btc_account = priv_key_to_account(BTCTEST, coins[BTCTEST][0]['privkey'])
 
 create_tx(BTCTEST, btc_account,"mkHS9ne12qx9pS9VojpwU5xtRd4T7X7ZUt", 0.0001)
